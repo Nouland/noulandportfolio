@@ -828,3 +828,10 @@ footer span a:hover{
         text-align: left;
     }
 }
+@media only screen and (max-width: 375px) and (max-width: 667px) { 
+    /* Tablet view: 2 tiles */
+    .footer-center .p{
+        font-size: 18px;
+    }
+    
+}
