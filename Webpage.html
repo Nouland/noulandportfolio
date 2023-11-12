@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/officebusters.css">
+    <link rel="stylesheet" type="text/css" href="css/images-gallery.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+<body>
+    <style>
+        body {
+            background-image: url('images/ABSTRACT_BACKGROUND_01.jpg'); /* Replace 'path/to/your/background-image.jpg' with the actual path to your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Optional: This will make the background image fixed while scrolling */
+        }
+        .gallery-item {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.1);
+        }
+
+        .min-vh-100 {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .title {
+            color: aliceblue;
+        }
+    </style>
+    <div id="navbar">
+        <a href="file:///D:/My%20FIles/Documents/Portfolio/noulandportfolio-main/noulandportfolio-main/index.html"><i class="fas fa-arrow-alt-circle-left"></i></a>
+    </div>
+    <h3 class="title text-center">Project</h3>
+    <section class="gallery min-vh-100">
+        <div class="container-lg">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-md-4">
+                        <a href="https://nouland.github.io/zmbet-followers/">
+                            <img src="images/images/followers.jpg" class="gallery-item img-fluid" alt="Gallery1">
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="https://nouland.github.io/ZMbetPlayer/">
+                            <img src="images/images/ZMBetPlayers.jpg" class="gallery-item img-fluid" alt="Gallery2">
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="https://nouland.github.io/888casino/">
+                            <img src="images/images/888.jpg" class="gallery-item img-fluid" alt="Gallery3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer style="float: left;">
+    <div class="footer-distributed">
+        <span>
+        <div class="footer-left">
+            <h3>Web<span>Design</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="#">About</a>
+        |
+                <a href="#">ArtWorkt</a>
+        |
+                <a href="#">Skill</a>
+        |
+                <a href="#">Work Experience</a>
+                |
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Website Design Copyright © 2023 <strong>Porfolio</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Makai City Metro Manila, Philippines</span></p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><span>noulandrealda6@gmail.com</a></span></p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p><span>09814385683 / 09978154179</span></p>
+            </div>
+            <div>
+                <a class="icons" href="https://wa.me/+639978154179"><i class='fab fa-viber'></a></i>
+                <p><span>WhatsApp</span></p>
+            </div>
+
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Follow us on</span>
+                <strong>Web Developer</strong> I convince you to look at each of my social media pages with my icon at the bottom and check my creative Layouts and Animations
+                and
+                Effects along with
+                HTML, JavaScript
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/nouland-realda-4526b01b7/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/Nouland"><i class="fa fa-github"></i></a>
+                <a href="https://www.behance.net/noulandrealda1"><i class="fab fa-behance"></i></a>
+            </div>
+        </div>
+    </span>
+</div>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<script type="text/javascript">
+		document.addEventListener("click",function (e){
+		  if(e.target.classList.contains("gallery-item")){
+		  	  const src = e.target.getAttribute("src");
+		  	  document.querySelector(".modal-img").src = src;
+		  	  const myModal = new bootstrap.Modal(document.getElementById('gallery-popup'));
+		  	  myModal.show();
+		  }
+		})
+	</script>
+
+  <script src="script.js"></script>
+  
+  
+  <script src="js/script1.js"></script>
+
+</html>
